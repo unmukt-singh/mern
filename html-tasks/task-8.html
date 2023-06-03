@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+     <table>
+      <tr>
+       <td>First Name</td>
+       <td><input type="text"></td>
+      </tr>
+      <tr>
+        <td>Last Name</td>
+        <td><input type="text"></td>
+       </tr>
+       <tr>
+        <td>Email</td>
+        <td><input type="email"></td>
+       </tr>
+      <tr>
+       <td>Password</td>
+       <td><input type="password"></td>
+      </tr>
+      <tr>
+        <td>Re-enter Password</td>
+        <td><input type="password"></td>
+       </tr>
+      <tr>
+       <td>Gender</td>
+       <td>
+        <input type="radio" name="Gender"> Male <br>
+        <input type="radio" name="Gender"> Female
+       </td>
+      </tr>
+      <tr>
+       <td>Age</td>
+       <td><input type="number"></td>
+      </tr>
+      <tr>
+        <td>Phone number</td>
+        <td><input type="number"></td>
+       </tr>
+       <tr>
+        <td>Address</td>
+        <td><textarea id="address" name="address" rows="5" cols="40"></textarea></td>
+       </tr>
+       <tr>
+        <td>State</td>
+        <td><input type="text"></td>
+       </tr>
+      <tr>
+       <td>Country</td>
+       <td>
+        <select>
+         <option disabled selected>Choose your country</option>
+         <option>India</option>
+         <option>Nepal</option>
+         <option>Bhutan</option>
+        </select>
+        <input type="phone">
+       </td>
+      </tr>
+      <tr>
+        <td>Languages known</td>
+        <td>
+            <input type="checkbox" name="lang1"> English
+            <input type="checkbox" name="lang2"> Kannada
+            <input type="checkbox" name="lang3"> Hindi
+            <input type="checkbox" name="lang4"> Telugu
+           </td>
+       </tr>
+       <tr>
+        <td colspan="2"><input type="checkbox" name="confirm">Hereby I declare all the given details are true</td>
+       </tr>
+       <tr>
+        <td id="ethnus" colspan="2">Log in to <a href="https://ethnus.com/">Ethnus</a> Website</td>
+       </tr>
+     </table>
+     <br>
+     <div><input id="submit" type="submit" value="Register"></div>
+    </form>
+   </body>
+
+   <style>
+    form{
+        margin: 0 auto;
+        width: 30vw;   
+    }
+    table,td{
+        margin: 0 auto;
+        border: 1px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        font-weight: bold;
+    }
+    td:last-child{
+        font-weight: 100;
+        text-align: left;
+    }
+    tr:last-of-type>td{
+        text-align: end;
+    }
+    input{
+        border: none
+    }
+    div{
+        display: flex;
+        justify-content: center;
+    }
+
+   </style>
+</html>
