@@ -60,23 +60,23 @@ Live site: - https://unmukt-singh.github.io/mern/
 
 [Task 1](js-tasks/task-1.html)
 
-[Task 2 Page 1](js-tasks/task-1.html)
+[Task 2 Page 1](js-tasks/task-2-page1.html)
 
-[Task 2 Page 2](js-tasks/task-1.html)
+[Task 2 Page 2](js-tasks/task-2-page2.html)
 
-[Task 2 Page 3](js-tasks/task-1.html)
+[Task 2 Page 3](js-tasks/task-2-page3.html)
 
-[Task 3](js-tasks/task-1.html)
+[Task 3](js-tasks/task-3.html)
 
-[Task 4](js-tasks/task-1.html)
+[Task 4](js-tasks/task-4.html)
 
-[Task 5](js-tasks/task-1.html)
+[Task 5](js-tasks/task-5.html)
 
-[Task 6](js-tasks/task-1.html)
+[Task 6](js-tasks/task-6.html)
 
-[Task 7](js-tasks/task-1.html)
+[Task 7](js-tasks/task-7.html)
 
-[Task 8](js-tasks/task-1.html)
+[Task 8](js-tasks/task-8.html)
 
 
 
