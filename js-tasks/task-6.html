@@ -14,7 +14,7 @@
     <script>
         function f1(){
             var x = document.getElementById("inp").value;
-            x = x.split("").sort().join("");
+            x = x.split("").reverse().join("");
             span = document.getElementById('output');
             txt = document.createTextNode(x);
             span.innerText = txt.textContent;
