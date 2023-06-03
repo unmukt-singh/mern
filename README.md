@@ -1,4 +1,4 @@
-Live site: - (https://unmukt-singh.github.io/mern/)
+Live site: - https://unmukt-singh.github.io/mern/
 
 ## HTML Tasks
 
