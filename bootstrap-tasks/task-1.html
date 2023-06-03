@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <div class="span">span 1</div>
+        <div class="span">span 2</div>
+        <div class="span">span 3</div>
+        <div class="span">span 4</div>
+        <div class="span">span 5</div>
+        <div class="span">span 6</div>
+        <div class="span">span 7</div>
+        <div class="span">span 8</div>
+        <div class="span">span 9</div>
+        <div class="span">span 10</div>
+        <div class="span">span 11</div>
+        <div class="span">span 12</div>
+        <div class="span4">span 4</div>
+        <div class="span4">span 4</div>
+        <div class="span4">span 4</div>
+        <div class="span4">span 4</div>
+        <div class="span8">span 8</div>
+        <div class="span12">span 12</div>
+    </div>  
+
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .content{
+            background-color: red;
+            margin: 0 auto;
+            max-height: 500px;
+            max-width: 600px;
+            display: grid;
+            gap: 2px;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: repeat(12, 1fr);
+        }
+
+        div{
+            text-align: center;
+            background-color: green;
+        }
+
+        .span4{
+            grid-column: span 4;
+        }
+
+        .span8{
+            grid-column: span 8;
+        }
+
+        .span12{
+            grid-column: span 12;
+        }
+    </style>
+</body>
+</html>
