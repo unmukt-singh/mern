@@ -1,4 +1,4 @@
-##HTML Tasks
+## HTML Tasks
 
 [Task 1](html-tasks/task-1.html)
 
@@ -20,4 +20,29 @@
 
 [Task 10](html-tasks/task-10.html)
 
+## CSS Tasks
+
+[Task 1](css-tasks/task-1.html)
+
+[Task 2](css-tasks/task-1.html)
+
+[Task 3](css-tasks/task-1.html)
+
+[Task 4](css-tasks/task-1.html)
+
+[Task 5](css-tasks/task-1.html)
+
+[Task 6](css-tasks/task-1.html)
+
+[Task 7](css-tasks/task-1.html)
+
+[Task 8](css-tasks/task-1.html)
+
+[Task 9](css-tasks/task-1.html)
+
+[Task 10](css-tasks/task-1.html)
+
+[Task 11](css-tasks/task-1.html)
+
+[Task 12](css-tasks/task-1.html)
 
