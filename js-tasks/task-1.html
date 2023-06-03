@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="f1()">show date</button><br>
+    <div id="date"></div>
+    <br><br>
+    <button onclick="f2()">show Time</button>
+    <div id="time"></div>
+
+    <script>
+
+        function f1(){
+            var d = new Date;
+            var date = d.toDateString();
+
+            span = document.getElementById('date');
+            txt = document.createTextNode(date);
+            span.innerText = txt.textContent;
+        }
+
+        function f2(){
+            var d = new Date;
+            var time = d.toString();
+
+            span = document.getElementById('time');
+            txt = document.createTextNode(time);
+            span.innerText = txt.textContent;
+        }
+        
+    </script>
+</body>
+</html>

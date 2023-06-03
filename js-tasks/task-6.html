@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="inp">Input: </label>&nbsp;<span><input type="text" name="inp" id="inp"></span><br><br>
+    <button onclick="f1()">Reverse</button><br><br>
+    Output: <span id="output"></span>
+
+    <script>
+        function f1(){
+            var x = document.getElementById("inp").value;
+            x = x.split("").sort().join("");
+            span = document.getElementById('output');
+            txt = document.createTextNode(x);
+            span.innerText = txt.textContent;
+        }
+    </script>
+</body>
+</html>

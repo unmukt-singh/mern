@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myForm" onsubmit="return validateForm()" method="post">
+        <label for="fname">Name:</label><br>
+        <input type="text" name="fname" id="fname">&nbsp;&nbsp;&nbsp;<span id="vname"></span><br><br>
+        <label for="email">Email:</label><br>
+        <input type="text" name="email" id="email">&nbsp;&nbsp;&nbsp;<span id="vmail"></span><br><br>
+        <label for="website">Website:</label><br>
+        <input type="text" name="website" id="website">&nbsp;&nbsp;&nbsp;<span id="vsite"></span><br><br>
+        <label for="message">Message:</label><br>
+        <textarea name="message" id="message" cols="25" rows="10"></textarea>&nbsp;&nbsp;&nbsp;<span id="varea"></span><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <style>
+        form{
+            width: 30vw;
+            margin: auto;
+        }
+        label{
+            font-weight: bold;
+        }
+        #confirm{
+            font-weight: 100;
+        }
+        span{
+            color: red;
+        }
+    </style>
+
+    <script>
+        function validateForm() {
+            let x = document.forms["myForm"]["fname"].value;
+            let y = document.forms["myForm"]["email"].value;
+            let z = document.forms["myForm"]["website"].value;
+            let a = document.forms["myForm"]["message"].value;
+            var n = true;
+
+            if (x == "") {
+                let g = "This field can not be empty";
+                document.getElementById("fname").style.borderColor = "red";
+                span = document.getElementById('vname');
+                txt = document.createTextNode(g);
+                span.innerText = txt.textContent;
+                n = false;
+            }
+
+            var mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if (y == "" || !y.match(mailFormat)) {
+                let g = "A valid email address is required";
+                document.getElementById("email").style.borderColor = "red";
+                span = document.getElementById('vmail');
+                txt = document.createTextNode(g);
+                span.innerText = txt.textContent;
+                n = false;
+            }
+
+            if (z == "" || !isValidUrl(z)) {
+                let g = "A valid url is required";
+                document.getElementById("website").style.borderColor = "red";
+                span = document.getElementById('vsite');
+                txt = document.createTextNode(g);
+                span.innerText = txt.textContent;
+                n = false;
+            }
+
+            if (a == "") {
+                let g  = "This field is required";
+                document.getElementById("message").style.borderColor = "red";
+                span = document.getElementById('varea');
+                txt = document.createTextNode(g);
+                span.innerText = txt.textContent;
+                n = false;
+            }
+
+            function isValidUrl(string) {
+                try{
+                    new URL(string);
+                    return true;
+                }
+                catch(err){
+                    return false;
+                }
+            }
+
+            if(n == false){
+                return false;
+            }
+
+            if(n == true){
+                return true;    
+            }
+        }
+    </script>
+</body>
+</html>

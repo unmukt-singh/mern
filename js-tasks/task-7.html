@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="inp">1st Number: </label>&nbsp;<span><input type="number" name="inp1" id="inp1"></span><br><br>
+    <label for="inp">2nd Number: </label>&nbsp;<span><input type="number" name="inp2" id="inp2"></span><br><br>
+    <button onclick="multiply()">Multiply</button>&nbsp;<button onclick="divide()">Divide</button><br><br>
+    Output: <span id="output"></span>
+
+    <script>
+        function multiply(){
+            x = document.getElementById("inp1").value;
+            y = document.getElementById("inp2").value;
+            document.getElementById("output").innerHTML = x*y;
+        }
+
+        function divide(){
+            x = document.getElementById("inp1").value;
+            y = document.getElementById("inp2").value;
+            document.getElementById("output").innerHTML = x/y;
+        }
+    </script>
+</body>
+</html>
