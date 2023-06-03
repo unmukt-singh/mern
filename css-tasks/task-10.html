@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+
+<body>
+
+    <div class="outerdiv">
+        <div class="innerdiv">
+            <p>The outer div has padding applied. This results in padding between the
+                edge of the outer div and the inner div. </p>
+        </div>
+    </div>
+    
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .outerdiv{
+            padding: 4px;
+            border: 1px solid gray;
+        }
+
+        .innerdiv{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+            max-width: 250px;
+        }
+
+        p{
+            background-color: yellow;
+            margin: 40px;
+        }
+    </style>
+</body>
+</html>

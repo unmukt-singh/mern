@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="left">
+            <div class="links">
+                <ul>
+                    <li><a href="">Home Page</a></li>
+                    <li><a href="#">Meetings</a></li>
+                    <li><a href="#">My town</a></li>
+                    <li><a href="#">Links</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div class="page">
+                <p><h1>My first styled page</h1></p>
+                <p>Welcome to my styled page</p>
+                <p>It lacks images but atleast it has style. And it has links, even if they don't go anywhere...</p>
+                <p>There should be more here but I don't know what yet.</p>
+                <p>---------------------------------------------------------------------------</p>
+            
+            <i>Made 17 May 2023<br>
+                by myself
+            </i>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .grid-container{
+            width: 700px;
+            height: 300px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 200px 400px;
+            gap: 50px;
+            grid-auto-rows: 200px;
+            grid-auto-columns: 500px;
+            background-color: yellow;
+        }
+
+        .right{
+            color: magenta;
+        }
+
+        ul{
+            display: flex;
+            flex-direction: column;
+            padding-top: 25px;  
+            list-style-type: none;
+            gap: 6px;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        li{
+            display: flex;
+            align-items: center;
+            padding-left: 4px;
+            min-width: 20px;
+            min-height: 30px;
+            background-color: aliceblue;
+        }
+    </style>
+    
+</body>
+</html>

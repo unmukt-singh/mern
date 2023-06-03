@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="navbuttons">
+            <div id="button1"><button></button></div>
+            <div id="button2"><button></button></div>
+            <div id="button3"><button></button></div>
+            <div id="button4"><button></button></div>
+        </div>
+        <div class="header">
+            <h2>Hoverable side nav buttons</h2>
+            <p> Hover over the buttons in the left side navigation to open them</p>
+        </div>
+    </div>
+
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }   
+
+        .content{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 50px 50px 0px;
+            border: 2px solid black;
+        }
+
+        .header{
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 50px;
+        }
+
+        .navbuttons{
+            display: flex;
+            flex-direction: column;
+            min-height: 100px;
+            min-width: 100px;
+            gap: 5px;
+        }
+
+        #button1 button{
+            background-color: greenyellow;
+        }
+
+        #button2 button{
+            background-color: cyan;
+        }
+
+        #button3 button{
+            background-color: red;
+        }
+
+        #button4 button{
+            background-color: black;
+        }
+
+        button{
+            min-height: 25px;
+            min-width: 25px;
+            border: none;
+            border-radius: 20%;
+            transition: .3s ease-in-out;
+        }
+
+        button:hover{
+            transform: scale(1.2);
+        }
+    </style>
+    
+</body>
+</html>
