@@ -54,7 +54,13 @@ Live site: - https://unmukt-singh.github.io/mern/
 
 [Task 2](bootstrap-tasks/task-2.html)
 
+[Task 3](bootstrap-tasks/task-3.html)
+
+[Task 5](bootstrap-tasks/task-5.html)
+
 [Task 6](bootstrap-tasks/task-6.html)
+
+[Task 7](bootstrap-tasks/task-7.html)
 
 ## JS Tasks
 
@@ -77,6 +83,14 @@ Live site: - https://unmukt-singh.github.io/mern/
 [Task 7](js-tasks/task-7.html)
 
 [Task 8](js-tasks/task-8.html)
+
+[Task 9](js-tasks/task-9.html)
+
+[Task 10](js-tasks/task-10.html)
+
+[Task 11](js-tasks/task-11.html)
+
+
 
 
 
