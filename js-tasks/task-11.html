@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="content">
+        <h1>Registration form</h1>
+        <form method="post" onsubmit="return validateForm()">
+         <table>
+          <tr>
+           <td>First Name</td>
+           <td><input id="fname" type="text">&nbsp;&nbsp;<span id="vfname"></span></td>
+          </tr>
+          <tr>
+            <td>Last Name</td>
+            <td><input id="lname" type="text">&nbsp;&nbsp;<span id="vlname"></span></td>
+           </tr>
+           <tr>
+            <td>Email</td>
+            <td><input id="email" type="email">&nbsp;&nbsp;<span id="vmail"></span></td>
+           </tr>
+          <tr>
+           <td>Password</td>
+           <td id><input id="pass" type="password">&nbsp;&nbsp;<span id="vpass"></span></td>
+          </tr>
+          <tr>
+            <td>Re-enter Password</td>
+            <td><input id="repass" type="password">&nbsp;&nbsp;<span id="vrepass"></span></td>
+           </tr>
+          <tr>
+           <td>Gender</td>
+           <td>
+            <input type="radio" name="Gender"> Male <br>
+            <input type="radio" name="Gender"> Female
+           </td>
+          </tr>
+          <tr>
+           <td>Age</td>
+           <td><input id="age" type="number">&nbsp;&nbsp;<span id="vage"></span></td>
+          </tr>
+          <tr>
+            <td>Phone number</td>
+            <td><input id="phno" type="number">&nbsp;&nbsp;<span id="vphno"></span></td>
+           </tr>
+           <tr>
+            <td>Address</td>
+            <td><textarea id="address" name="address" rows="5" cols="21"></textarea>&nbsp;&nbsp;<span id="vadd"></span></td>
+           </tr>
+           <tr>
+            <td>State</td>
+            <td><input id="state" type="text">&nbsp;&nbsp;<span id="vstate"></span></td>
+           </tr>
+          <tr>
+           <td>Country</td>
+           <td>
+            <select>
+             <option disabled selected>Choose your country</option>
+             <option>India</option>
+             <option>Nepal</option>
+             <option>Bhutan</option>
+            </select>
+           </td>
+          </tr>
+          <tr>
+            <td>Languages known</td>
+            <td>
+                <input type="checkbox" name="lang1"> English
+                <input type="checkbox" name="lang2"> Kannada
+                <input type="checkbox" name="lang3"> Hindi
+                <input type="checkbox" name="lang4"> Telugu
+               </td>
+           </tr>
+           <tr>
+            <td colspan="2"><input type="checkbox" name="confirm">Hereby I declare all the given details are true</td>
+           </tr>
+           <tr>
+            <td id="ethnus" colspan="2">Log in to <a href="https://ethnus.com/">Ethnus</a> Website</td>
+           </tr>
+         </table>
+         <br>
+         <div id="sub"><input id="submit" type="submit" value="Register"></div>
+        </form>
+    </div>
+   </body>
+
+   <style>
+
+    .content{
+        margin: 0 auto;
+        width: 35vw;
+        background: rgb(233,238,160);
+        background: radial-gradient(circle at center top, rgba(233,238,160,1) 22%, rgba(237,149,219,1) 100%);
+        padding: 0 0 20px;
+        gap: 5px;
+    }
+    h1{
+        text-align: center;
+        color: blue;
+    }
+    form{
+        margin: 0 auto;
+        width: 30vw;   
+    }
+    table{
+        margin: 0 auto;
+        border: none;
+        border-spacing: 5px;
+        text-align: center;
+        font-weight: bold;
+    }
+    td:last-child{
+        font-weight: 100;
+        text-align: left;
+    }
+    tr:last-of-type>td{
+        text-align: end;
+    }
+    #sub{
+        display: flex;
+        justify-content: center;
+    }
+    #submit{
+        color: white;
+        background-color: red;
+        border-radius: 20px;
+    }
+    span{
+            color: red;
+    }
+   </style>
+
+<script>
+    function validateForm() {
+        let x = document.getElementById('fname').value;
+        let y = document.getElementById('lname').value;
+        let z = document.getElementById('email').value;
+        let a = document.getElementById('pass').value;
+        let b = document.getElementById('repass').value;
+        let c = document.getElementById('age').value;
+        let d = document.getElementById('phno').value;
+        let e = document.getElementById('address').value;
+        let f = document.getElementById('state').value;
+        var n = true;
+
+        if (x == "") {
+            let g = "POOR";
+            span = document.getElementById('vfname');
+            txt = document.createTextNode(g);
+            span.innerText = txt.textContent;
+            n = false;
+        }
+
+        if (y == "") {
+            let g = "POOR";
+            span = document.getElementById('vlname');
+            txt = document.createTextNode(g);
+            span.innerText = txt.textContent;
+            n = false;
+        }
+
+        var mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if (z == "" || !z.match(mailFormat)) {
+            let g = "POOR";
+            span = document.getElementById('vmail');
+            txt = document.createTextNode(g);
+            span.innerText = txt.textContent;
+            n = false;
+        }
+
+        if (a == "" || a.length < 8) {
+            let g = "POOR";
+            span = document.getElementById('vpass');
+            txt = document.createTextNode(g);
+            span.innerText = txt.textContent;
+            n = false;
+        }
+
+        if (b == "" || b!=a) {
+            let g  = "POOR OR MISMATCH";
+            span = document.getElementById('vrepass');
+            txt = document.createTextNode(g);
+            span.innerText = txt.textContent;
+            n = false;
+        }
+
+        if (c=="" || isNaN(c)) {
+            let g  = "POOR";
+            span = document.getElementById('vage');
+            txt = document.createTextNode(g);
+            span.innerText = txt.textContent;
+            n = false;
+        }
+
+        if (d=="" || isNaN(d)) {
+            let g  = "POOR";
+            span = document.getElementById('vphno');
+            txt = document.createTextNode(g);
+            span.innerText = txt.textContent;
+            n = false;
+        }
+
+        if (e=="") {
+            let g  = "POOR";
+            span = document.getElementById('vadd');
+            txt = document.createTextNode(g);
+            span.innerText = txt.textContent;
+            n = false;
+        }
+
+        if (f=="") {
+            let g  = "POOR";
+            span = document.getElementById('vstate');
+            txt = document.createTextNode(g);
+            span.innerText = txt.textContent;
+            n = false;
+        }
+
+        if(n == false){
+            return false;
+        }
+
+        if(n == true){
+            return true;    
+        }
+    }
+</script>
+</html>

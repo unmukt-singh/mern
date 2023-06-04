@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="body">
+        <div class="content">
+            <div class="form">
+                <form name="myForm" method="post" onclick="validateForm()">
+                    <label for="fname">Name: &nbsp;</label>
+                    <input type="text" name="fname" id="fname" placeholder="your name"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="your email"><br><br>
+                    <label for="pword">Password:</label>
+                    <input type="password" name="pword" id="pword"><br><br>
+                    <label for="phno">Phone Number:</label>
+                    <input type="number" name="phno" id="phno"><br><br>
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" id="age"><br><br>
+                    <label for="gender">Gender:</label>
+                    <span>Male:<input type="radio" name="gender" value="Male">
+                    Female:<input type="radio" name="gender" value="Female">
+                    Other:<input type="radio" name="gender" value="Other"></span><br><br>
+                    <label for="lang">Language:</label>
+                    <select name="lang" id="lang">
+                        <option value="" selected disabled>Select Language</option>
+                        <option value="English">English</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Telugu">Telugu</option>
+                        <option value="Kannada">Kannada</option>
+                    </select><br><br>
+                    <label for="zip">Zip code:</label>
+                    <input type="number" name="zip" id="zip"><br><br>
+                    <label for="about">About: </label>
+                    <textarea name="about" id="" cols="21" rows="3" placeholder="Write about yourself"></textarea>
+                    <p>&nbsp;</p>
+                    <input type="submit" value="Register">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <style>
+
+        .body{
+            background-color: #cf3476 ;
+            width: 50vw;
+            margin: 0 auto;
+            padding: 1px 10px 50px 10px;
+        }
+        .content{
+            width: 80%;
+            margin: 0 auto;
+            background-color: #8e3a59;
+        }
+
+        .form{
+            width: 50%;
+            margin: 0 auto;
+            margin-top: 50px;
+            padding: 25px 0px 30px;
+            color: white;
+        }
+
+        span{
+            display: flex;
+        }
+
+        span > input{
+            float: none;
+        }
+
+        input, textarea, select, span{
+            float: right;
+            max-width: 50%;
+        }
+
+        p + input{
+            min-width: 100%;
+        }
+    </style>
+</body>
+</html>
