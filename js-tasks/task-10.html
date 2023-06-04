@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    concat method <br>
+    <span id="concat"></span><br><br>
+    copyWithin method <br>
+    <span id="copyWithin"></span><br><br>
+    map method <br>
+    <span id="map"></span><br><br>
+    every method <br>
+    <span id="every"></span><br><br>
+    some method <br>
+    <span id="some"></span><br><br>
+    filer method <br>
+    <span id="filter"></span><br><br>
+    find method <br>
+    <span id="find"></span><br><br>
+    findIndex method <br>
+    <span id="findIndex"></span><br><br>
+    indexOf method <br>
+    <span id="indexOf"></span><br><br>
+    lastIndexOf method <br>
+    <span id="lastIndexOf"></span><br><br>
+    push <br>
+    <span id="push"></span><br><br>
+    pop <br>
+    <span id="pop"></span><br><br>
+    shift <br>
+    <span id="shift"></span>
+
+    <script>
+        var arr1 = [10, 20, 30];
+        var arr2 = [40, 50, 60];
+        var children = arr1.concat(arr2);
+        document.getElementById('concat').innerHTML = children;
+        document.getElementById('copyWithin').innerHTML = children.copyWithin(3,0);
+        document.getElementById('map').innerHTML = children.map(myFunction);
+        document.getElementById('every').innerHTML = children.every(checkValue);
+        document.getElementById('some').innerHTML = children.some(checkValue);
+        document.getElementById('filter').innerHTML = children.filter(checkValue);
+        document.getElementById('find').innerHTML = children.find(checkValue);
+        document.getElementById('findIndex').innerHTML = children.findIndex(checkValue);
+        document.getElementById('indexOf').innerHTML = children.indexOf(20);
+        document.getElementById('lastIndexOf').innerHTML = children.lastIndexOf(20);
+        children.push(100);
+        document.getElementById('push').innerHTML = children;
+        children.pop();
+        document.getElementById('pop').innerHTML = children;
+        children.shift();
+        document.getElementById('shift').innerHTML = children;
+
+        function checkValue(num){
+            return num >= 20;
+        }
+
+        function myFunction(num){
+            return num;
+        } 
+    </script>
+</body>
+</html>
