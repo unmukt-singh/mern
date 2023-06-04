@@ -56,11 +56,15 @@ Live site: - https://unmukt-singh.github.io/mern/
 
 [Task 3](bootstrap-tasks/task-3.html)
 
+[Task 4](bootstrap-tasks/task-4.html)
+
 [Task 5](bootstrap-tasks/task-5.html)
 
 [Task 6](bootstrap-tasks/task-6.html)
 
 [Task 7](bootstrap-tasks/task-7.html)
+
+[Task 8](bootstrap-tasks/task-8.html)
 
 ## JS Tasks
 
